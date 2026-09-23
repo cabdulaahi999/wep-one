@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+</head>
+<body>
+
+    <header>
+        <h1>School Management System</h1>
+        <p>A simple HTML portal for student and course management.</p>
+        <hr>
+    </header>
+
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#registration">Registration Form</a></li>
+            <li><a href="#students">Student List</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <main>
+
+        <section id="overview">
+            <h2>System Overview</h2>
+            <p>Welcome to the School Management System. This portal allows administrators to view student records, register new students, and check course details.</p>
+            
+            <h3>Key Features</h3>
+            <ol>
+                <li>Student Registration</li>
+                <li>Student Directory Table</li>
+                <li>Course List Information</li>
+            </ol>
+            <hr>
+        </section>
+
+        <section id="registration">
+            <h2>Student Registration Form</h2>
+            <p>Fill out the form below to submit a new student record.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <p>
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="firstname" required>
+                    </p>
+
+                    <p>
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" id="lname" name="lastname" required>
+                    </p>
+
+                    <p>
+                        <label for="gender">Gender:</label><br>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Academic Info</legend>
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="grade">Grade Level:</label><br>
+                        <select id="grade" name="grade">
+                            <option value="9">Grade 9</option>
+                            <option value="10">Grade 10</option>
+                            <option value="11">Grade 11</option>
+                            <option value="12">Grade 12</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Register Student">
+                    <input type="reset" value="Reset Form">
+                </p>
+            </form>
+            <hr>
+        </section>
+
+        <section id="students">
+            <h2>Student Directory</h2>
+            <p>List of registered students:</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Full Name</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>STU-101</td>
+                        <td>Amina Ali</td>
+                        <td>Grade 10</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>STU-102</td>
+                        <td>Hassan Farah</td>
+                        <td>Grade 11</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>STU-103</td>
+                        <td>Teacher New Student Name</td>
+                        <td>Grade 12</td>
+                        <td>Active</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </section>
+
+        <section id="courses">
+            <h2>Course Catalog</h2>
+            <dl>
+                <dt><strong>CS101: Web Basics</strong></dt>
+                <dd>Introduction to HTML, URLs, and web structure.</dd>
+
+                <dt><strong>CS102: HTML Forms & Tables</strong></dt>
+                <dd>Learning semantic markup, form controls, and table structures.</dd>
+            </dl>
+            <hr>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Support</h2>
+        <p>Email: <a href="mailto:admin@school.edu">admin@school.edu</a></p>
+        <p>&copy; 2026 School Management System</p>
+        <p><a href="#overview">Back to Top</a></p>
+    </footer>
+
+</body>
+</html>
